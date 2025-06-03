@@ -13,16 +13,16 @@ function Header({ addTodo }) {
 
   return (
     <header style={{ textAlign: 'center', marginBottom: '20px' }}>
-      <h1>To-Do List</h1>
+      <h1> To-Do List</h1>
       <form onSubmit={handleSubmit} style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
         <input
           type="text"
           placeholder="Add a new task"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          style={{ padding: '8px', width: '300px' }}
+          style={{ padding: '8px', width: '300px' ,fontFamily: 'cursive'}}
         />
-        <button type="submit" style={{ padding: '8px 16px' }}>Add</button>
+        <button type="submit" style={{ padding: '8px 16px',fontFamily: 'cursive' }}>Add</button>
       </form>
     </header>
   );

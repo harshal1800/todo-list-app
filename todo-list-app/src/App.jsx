@@ -30,7 +30,14 @@ function App() {
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
+    <div
+      style={{
+        padding: '20px',
+        fontFamily: 'cursive',
+        backgroundColor: '#d7d1fa',
+        minHeight: '100vh',
+      }}
+    >
       <Header addTodo={addTodo} />
       <ToDoList
         todos={todos}

@@ -22,6 +22,7 @@ function ToDoItem({ todo, deleteTodo, toggleComplete, editTodo }) {
         border: '1px solid #ddd',
         borderRadius: '8px',
         background: todo.completed ? '#e0ffe0' : '#fff',
+        fontFamily: 'cursive',
       }}
     >
       <input
@@ -34,7 +35,7 @@ function ToDoItem({ todo, deleteTodo, toggleComplete, editTodo }) {
           type="text"
           value={newText}
           onChange={(e) => setNewText(e.target.value)}
-          style={{ flex: 1, padding: '5px' }}
+          style={{ flex: 1, padding: '5px' , fontFamily: 'cursive' }}
         />
       ) : (
         <span
@@ -46,8 +47,10 @@ function ToDoItem({ todo, deleteTodo, toggleComplete, editTodo }) {
           {todo.text}
         </span>
       )}
-      <button onClick={handleEdit}>{isEditing ? 'Save' : 'Edit'}</button>
-      <button onClick={() => deleteTodo(todo.id)} style={{ color: 'red' }}>
+      <button onClick={handleEdit}  style={{ fontFamily: 'cursive' }}>
+       {isEditing ? 'Save' : 'Edit'}</button>
+       
+      <button onClick={() => deleteTodo(todo.id)} style={{ color: 'red' ,fontFamily: 'cursive'}}>
         Delete
       </button>
     </div>
