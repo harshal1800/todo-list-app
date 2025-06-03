@@ -16,11 +16,7 @@ A simple and clean To-Do List application built using **React** and **Tailwind C
 
 ---
 
-## 📸 Preview
 
-![Screenshot]
-
----
 
 ## 🛠️ Tech Stack
 
@@ -110,3 +106,5 @@ This project is for educational use.
 
 ```
 
+git repository link :
+https://github.com/harshal1800/todo-list-app.git
